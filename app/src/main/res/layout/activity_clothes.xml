@@ -45,5 +45,6 @@
     <ListView
         android:id="@+id/listViewClothes"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"/>
 </LinearLayout>
