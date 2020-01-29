@@ -4,13 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HouseholdActivity">
+    tools:context=".HouseholdActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
 
     <TextView
         android:id="@+id/textViewHousehold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Список хозтоваров"
-        android:textSize="24sp" />
+        android:text="Список хозтовары"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/editTextHousehold"
+        android:textSize="16sp"
+        android:hint="Вы хотите купить"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <Button
+            android:text="Добавить"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButtonAdd"/>
+        <Button
+            android:text="Удалить"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButtonRemove"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewHousehold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
